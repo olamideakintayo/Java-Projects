@@ -1,59 +1,44 @@
-AsteriskPattern.java
+// AsteriskPattern,java
 
 public class AsteriskPattern {
 
     public static void main(String[] args) {
+        int n = 5;
 
-        int columnA = 6;
+        System.out.printf("%-17s%-17s%-17s%-17s%n", "A", "B", "C", "D");
 
-        System.out.printf("%-12s%-12s%-12s%-12s%n", "Pattern A", "Pattern B", "Pattern C", "Pattern D");
-
-        int row = 1;
-        while (row <= columnA) {
-
-            String patternA = "";
-            int colA = 1;
-            while (colA <= row) {
-                patternA = patternA + "*";
-                colA = colA + 1;
+        for (int column = 1; column <= n; column++) {
+            for (int row = 1; row <= column; row++) {
+                System.out.print("* ");
             }
-
-            String patternB = "";
-            int colB = 1;
-            while (colB <= columnA - row + 1) {
-                patternB = patternB + "*";
-                colB = colB + 1;
+            for (int space = column; space < n; space++) {
+                System.out.print("  ");
             }
+            System.out.print("   ");
 
-            String patternC = "";
-            int spaceC = columnA - row;
-            while (spaceC > 0) {
-                patternC = patternC + " ";
-                spaceC = spaceC - 1;
+            for (int row = column; row <= n; row++) {
+                System.out.print("* ");
             }
-            int colC = 1;
-            while (colC <= row) {
-                patternC = patternC + "*";
-                colC = colC + 1;
+            for (int space = 1; space < column; space++) {
+                System.out.print("  ");
             }
+            System.out.print("   ");
 
-            String patternD = "";
-            int spaceD = 1;
-            while (spaceD < row) {
-                patternD = patternD + " ";
-                spaceD = spaceD + 1;
+            for (int row = 1; row <= column; row++) {
+                System.out.print("  ");
             }
-            int colD = 1;
-            while (colD <= columnA - row + 1) {
-                patternD = patternD + "*";
-                colD = colD + 1;
+            for (int row = column; row <= n; row++) {
+                System.out.print("* ");
             }
+            System.out.print("   ");
 
-            System.out.printf("%-12s%-12s%-12s%-12s%n", patternA, patternB, patternC, patternD);
-
-            row = row + 1;
+            for (int row = column; row <= n; row++) {
+                System.out.print("  ");
+            }
+            for (int row = 1; row <= column; row++) {
+                System.out.print("* ");
+            }
+            System.out.println();
         }
-
     }
-
 }
