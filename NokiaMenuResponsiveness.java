@@ -723,6 +723,274 @@ Press 0 to go back
                         }
                         break;
 
+			case 4:
+                        System.out.println("Composer");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue tonesMenu;
+                        }
+                        break;
+
+			case 5:
+                        System.out.println("Message alert tone");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue tonesMenu;
+                        }
+                        break;
+
+			case 6:
+                        System.out.println("Keypad tones");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue tonesMenu;
+                        }
+                        break;
+			
+			case 7:
+                        System.out.println("Warning and game tones");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue tonesMenu;
+                        }
+                        break;
+
+			case 8:
+                        System.out.println("Vibrating alert");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue tonesMenu;
+                        }
+                        break;
+
+			case 9:
+                        System.out.println("Screen saver");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue tonesMenu;
+                        }
+                        break;
+
+			case 0:
+			System.out.println("You're about to go back to the previous menu");
+			System.out.println("Press 0 to go back");
+			if (input.nextInt() == 0) {
+			continue mainMenu;
+			}			
+			}
+	    		}
+
+			case 6:
+    			settingsMenu:
+    			while (true) {
+        		System.out.print(settings);
+        		System.out.print("Please Enter your preferred number from the options: ");
+        		int settingsInput = input.nextInt();
+
+        		switch (settingsInput) {
+            		case 1:
+                	callSettingsMenu:
+                	while (true) {
+                    	System.out.print(callSettings);
+                   	 System.out.println("Please Enter your preferred number from call settings options:");
+                    	int callSettingsInput = input.nextInt();
+
+                    switch (callSettingsInput) {
+                        case 1:
+                            System.out.println("Automatic redial");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue callSettingsMenu; 
+                            }
+                            break;
+
+			case 2:
+			    System.out.println("Speed dialling");
+			    System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue callSettingsMenu; 
+                            }
+                            break;
+
+			case 3:
+			    System.out.println("Call waiting options");
+			    System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue callSettingsMenu; 
+                            }
+                            break;
+
+			case 4:
+			    System.out.println("Own number sending");
+			    System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue callSettingsMenu; 
+                            }
+                            break;
+
+			case 5:
+			    System.out.println("Phone line in use");
+			    System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue callSettingsMenu; 
+                            }
+                            break;
+
+			case 6:
+			    System.out.println("Automatic answer");
+			    System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue callSettingsMenu; 
+                            }
+                            break;
+
+			case 0:
+			System.out.println("You're about to go back to the previous menu");
+			System.out.println("Press 0 to go back");
+			if (input.nextInt() == 0) {
+			continue callSettingsMenu;
+			}	
+
+			}
+			}
+			case 2:
+                	phoneSettingsMenu:
+                	while (true) {
+                    	System.out.print(phoneSettings);
+                   	 System.out.println("Please Enter your preferred number from call settings options:");
+                    	int phoneSettingsInput = input.nextInt();
+
+                    switch (phoneSettingsInput) {
+                        case 1:
+                            System.out.println("Language");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue phoneSettingsMenu; 
+                            }
+                            break;
+
+			case 2:
+                            System.out.println("Cell info display");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue phoneSettingsMenu; 
+                            }
+                            break;
+
+			case 3:
+                            System.out.println("Welcome note");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue phoneSettingsMenu; 
+                            }
+                            break;
+	
+			case 4:
+                            System.out.println("Network selection");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue phoneSettingsMenu; 
+                            }
+                            break;
+
+			case 5:
+                            System.out.println("Lights");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue phoneSettingsMenu; 
+                            }
+                            break;
+
+			case 6:
+                            System.out.println("Confirm SIM service actions");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue phoneSettingsMenu; 
+                            }
+                            break;
+
+			case 0:
+			System.out.println("You're about to go back to the previous menu");
+			System.out.println("Press 0 to go back");
+			if (input.nextInt() == 0) {
+			continue phoneSettingsMenu;
+			}	
+
+			}
+			}
+
+			case 3:
+                	securitySettingsMenu:
+                	while (true) {
+                    	System.out.print(securitySettings);
+                   	 System.out.println("Please Enter your preferred number from call settings options:");
+                    	int securitySettingsInput = input.nextInt();
+
+                    switch (securitySettingsInput) {
+                        case 1:
+                            System.out.println("PIN code request");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue securitySettingsMenu; 
+                            }
+                            break;
+
+			case 2:
+                            System.out.println("Call barring service");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue securitySettingsMenu; 
+                            }
+                            break;
+
+			case 3:
+                            System.out.println("Fixed dialling");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue securitySettingsMenu; 
+                            }
+                            break;
+
+			case 4:
+                            System.out.println("Closed user group");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue securitySettingsMenu; 
+                            }
+                            break;
+
+			case 5:
+                            System.out.println("Phone security");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue securitySettingsMenu; 
+                            }
+                            break;
+
+			case 6:
+                            System.out.println("Change access codes");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue securitySettingsMenu; 
+                            }
+                            break;
+			
+			case 0:
+			System.out.println("You're about to go back to the previous menu");
+			System.out.println("Press 0 to go back");
+			if (input.nextInt() == 0) {
+			continue securitySettingsMenu;
+			}
+
+			}
+			}
+		
+			case 4:
+                            System.out.println("Restore factory settings");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue settingsMenu; 
+                            }
 			case 0:
 			System.out.println("You're about to go back to the previous menu");
 			System.out.println("Press 0 to go back");
@@ -730,12 +998,117 @@ Press 0 to go back
 			continue mainMenu;
 			}
 
-					
+			}	
+			}
+	
+			case 7:
+                            System.out.println("Call divert");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue mainMenu; 
+                            }	
 
-		}
-	    	}	
-            }
-		break;
+			case 8:
+                            System.out.println("Games");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue mainMenu; 
+                            }	
+
+			case 9:
+                            System.out.println("Calculator");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue mainMenu; 
+                            }	
+
+			case 10:
+                            System.out.println("Reminders");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue mainMenu; 
+                            }	
+
+			case 11:
+			clockMenu:
+			while(true) {
+			System.out.print(clock);
+			System.out.print("Please Enter your preferred number from the options: ");
+                        int clockInput = input.nextInt();
+
+			switch (clockInput) {
+                        case 1:
+                        System.out.println("Alarm clock");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue clockMenu;
+                        }
+                        break; 
+		
+			case 2:
+                        System.out.println("Clock settings");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue clockMenu;
+                        }
+                        break; 
+
+			case 3:
+                        System.out.println("Date setting");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue clockMenu;
+                        }
+                        break; 
+
+			case 4:
+                        System.out.println("Stopwatch");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue clockMenu;
+                        }
+                        break; 
+
+			case 5:
+                        System.out.println("Countdown timer");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue clockMenu;
+                        }
+                        break; 
+
+			case 6:
+                        System.out.println("Auto update of date and time");
+                        System.out.println("Press 0 to go back");
+                        if (input.nextInt() == 0) {
+                        continue clockMenu;
+                        }
+                        break;
+
+			case 0:
+			System.out.println("You're about to go back to the previous menu");
+			System.out.println("Press 0 to go back");
+			if (input.nextInt() == 0) {
+			continue mainMenu;
+			}
+			}
+			}
+
+			case 12:
+                            System.out.println("Profiles");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue mainMenu; 
+                            }	
+
+			case 13:
+                            System.out.println("SIM services");
+                            System.out.println("Press 0 to go back");
+                            if (input.nextInt() == 0) {
+                                continue mainMenu; 
+                            }	
+			}		
+			break;
         }
     }
 }
