@@ -13,6 +13,7 @@ public class NokiaMenuResponsiveness {
 
         String message = """
         List of menu functions
+
         1. Phone Book
         2. Messages
         3. Chat
@@ -26,7 +27,9 @@ public class NokiaMenuResponsiveness {
         11. Clock
         12. Profiles
         13. Sim services
+
         Press 0 to end the app
+
         """;
 
         String phoneBook = """
@@ -41,14 +44,18 @@ public class NokiaMenuResponsiveness {
           8. Options
           9. Speed dials
           10. Voice tags
+
         Press 0 to go back
+
         """;
 
         String phoneBookOptions = """
         8. Options
           1. Type of view
           2. Memory status
+
         Press 0 to go back
+
         """;
 
         String messages = """
@@ -63,13 +70,17 @@ public class NokiaMenuResponsiveness {
           8. Info service
           9. Voice mailbox number
           10. Service command editor
+
         Press 0 to go back
+
         """;
 
         String messageSettings = """
         1. Set 1
         2. Common
+
         Press 0 to go back
+
         """;
 
         String set1 = """
@@ -77,7 +88,9 @@ public class NokiaMenuResponsiveness {
           1. Message center number
           2. Messages sent as
           3. Message validity
+
         Press 0 to go back
+
         """;
 
         String common = """
@@ -85,7 +98,9 @@ public class NokiaMenuResponsiveness {
           1. Delivery reports
           2. Reply via same centre
           3. Character support
+
         Press 0 to go back
+
         """;
 
 	 String callRegister = """
@@ -98,7 +113,9 @@ Call Register
 6. Show Call Costs
 7. Call Cost Settings
 8. Prepaid Credit
+
 Press 0 to go back
+
 """;
 
         String showCallDuration = """
@@ -108,7 +125,9 @@ Show Call Duration
 3. Received Calls' Duration
 4. Dialled Calls' Duration
 5. Clear Timers
+
 Press 0 to go back
+
 """;
 
         String showCallCosts = """
@@ -116,14 +135,18 @@ Show Call Costs
 1. Last Call Cost
 2. All Calls' Cost
 3. Clear Counters
+
 Press 0 to go back
+
 """;
 
         String callCostSettings = """
 Call Cost Settings
 1. Call Cost Limit
 2. Show Costs In
+
 Press 0 to go back
+
 """;
 
         String tones = """
@@ -137,7 +160,9 @@ Tones
 7. Warning And Game Tones
 8. Vibrating Alert
 9. Screen Saver
+
 Press 0 to go back
+
 """;
 
         String settings = """
@@ -146,7 +171,9 @@ Settings
 2. Phone Settings
 3. Security Settings
 4. Restore Factory Settings
+
 Press 0 to go back
+
 """;
 
         String callSettings = """
@@ -157,7 +184,9 @@ Call Settings
 4. Own Number Sending
 5. Phone Line In Use
 6. Automatic Answer
+
 Press 0 to go back
+
 """;
 
         String phoneSettings = """
@@ -168,7 +197,9 @@ Phone Settings
 4. Network Selection
 5. Lights
 6. Confirm SIM Service Actions
+
 Press 0 to go back
+
 """;
 
         String securitySettings = """
@@ -179,7 +210,9 @@ Security Settings
 4. Closed User Group
 5. Phone Security
 6. Change Access Codes
+
 Press 0 to go back
+
 """;
 
         String clock = """
@@ -190,29 +223,28 @@ Clock
 4. Stopwatch
 5. Countdown Timer
 6. Auto Update Of Date And Time
+
 Press 0 to go back
 """;
 
 
 
-        System.out.print(welcomeMessage);
-        int welcomeInput = input.nextInt();
-
-        if (welcomeInput != 1) {
-            System.out.print("Invalid Input! Restart the app");
-            return;
-        }
-
+     
         mainMenu:
         while (true) {
             System.out.print(message);
             System.out.print("Please Enter your preferred number from the options: ");
             int mainMenuInput = input.nextInt();
 
-            if (mainMenuInput == 0) {
-                System.out.println("Goodbye!");
-                break;
-            }
+		
+		if (mainMenuInput == 0) {
+		break;
+		}
+
+		if (mainMenuInput < 0 || mainMenuInput > 13) {
+		System.out.println("Invalid Input!! Enter a valid number from the options");
+                            continue mainMenu;
+                        }
 
             switch (mainMenuInput) {
                 case 1:
@@ -222,6 +254,10 @@ Press 0 to go back
                         System.out.print("Please Enter your preferred number from the options: ");
                         int phoneBookInput = input.nextInt();
 
+			if (phoneBookInput < 0 || phoneBookInput > 10) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                            continue phoneBookMenu;
+                        }
                         switch (phoneBookInput) {
                             case 1:
                                 System.out.println("Search");
@@ -278,6 +314,11 @@ Press 0 to go back
                                     System.out.print(phoneBookOptions);
                                     System.out.print("Please Enter your preferred number from the options: ");
                                     int phoneBookOptionsInput = input.nextInt();
+
+					if (phoneBookOptionsInput < 0 || phoneBookOptionsInput > 6) {
+					System.out.println("Invalid Input!! Enter a valid number from the options");
+                        		continue optionsMenu;
+                        		}
                                     switch (phoneBookOptionsInput) {
                                         case 1:
                                             System.out.println("Type of view");
@@ -293,6 +334,15 @@ Press 0 to go back
                                                 continue optionsMenu;
                                             }
                                             break;
+
+					 case 0:
+				System.out.println("You're about to go back to the previous menu");
+				System.out.println("Press 0 to go back");
+				if (input.nextInt() == 0) {
+				    continue phoneBookMenu;
+				}
+				break;
+
                                     }
                                     break;
                                 }
@@ -329,6 +379,12 @@ Press 0 to go back
                         System.out.print(messages);
                         System.out.print("Please Enter your preferred number from the options: ");
                         int messagesInput = input.nextInt();
+
+			if (messagesInput < 0 || messagesInput > 10) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                            continue messagesMenu;
+                        }
+
 
                         switch (messagesInput) {
                             case 1:
@@ -379,6 +435,11 @@ Press 0 to go back
                                     System.out.print(messageSettings);
                                     System.out.print("Please Enter your preferred number from the options: ");
                                     int messageSettingsInput = input.nextInt();
+
+				if (messageSettingsInput < 0 || messageSettingsInput > 2) {
+						 System.out.println("Invalid Input!! Enter a valid number from the options");
+                           			 continue messageSettingsMenu;
+                        			}
                                     switch (messageSettingsInput) {
                                         case 1:
                                             set1Menu:
@@ -386,6 +447,11 @@ Press 0 to go back
                                                 System.out.print(set1);
                                                 System.out.print("Please Enter your preferred number from the options: ");
                                                 int set1Input = input.nextInt();
+
+						if (set1Input < 0 || set1Input > 3) {
+						 System.out.println("Invalid Input!! Enter a valid number from the options");
+                           			 continue set1Menu;
+                        			}
                                                 switch (set1Input) {
                                                     case 1:
                                                         System.out.println("Message center number");
@@ -421,6 +487,11 @@ Press 0 to go back
                                                 System.out.print(common);
                                                 System.out.print("Please Enter your preferred number from the options: ");
                                                 int commonInput = input.nextInt();
+
+						if (commonInput < 0 || commonInput > 3) {
+						 System.out.println("Invalid Input!! Enter a valid number from the options");
+                           			 continue commonMenu;
+                        			}
                                                 switch (commonInput) {
                                                     case 1:
                                                         System.out.println("Delivery reports");
@@ -504,6 +575,11 @@ Press 0 to go back
                         System.out.print("Please Enter your preferred number from the options: ");
                         int callRegisterInput = input.nextInt();
 
+			 if (callRegisterInput < 0 || callRegisterInput > 8) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                            continue callRegisterMenu;
+                        }
+
 			switch (callRegisterInput) {
                             case 1:
                                 System.out.println("Missed calls");
@@ -543,6 +619,11 @@ Press 0 to go back
                        		System.out.print(showCallDuration);
                        		System.out.print("Please Enter your preferred number from the options: ");
                         	int showCallDurationInput = input.nextInt();
+
+				if (showCallDurationInput < 0 || showCallDurationInput > 5) {
+				System.out.println("Invalid Input!! Enter a valid number from the options");
+                           	continue showCallDurationMenu;
+                        	}
 
 				switch (showCallDurationInput) {
                                 case 1:
@@ -603,6 +684,11 @@ Press 0 to go back
 					System.out.print("Please Enter your preferred number from the options: ");
                         		int showCallCostsInput = input.nextInt();
 
+					if (showCallCostsInput < 0 || showCallCostsInput > 3) {
+					System.out.println("Invalid Input!! Enter a valid number from the options");
+                           		continue showCallCostsMenu;
+                        		}
+
 					switch (showCallCostsInput) {
                                 	case 1:
                                 	System.out.println("Last call cost");
@@ -644,6 +730,11 @@ Press 0 to go back
 					System.out.print(callCostSettings);
 					System.out.print("Please Enter your preferred number from the options: ");
                         		int callCostSettingsInput = input.nextInt();
+
+					if (callCostSettingsInput < 0 || callCostSettingsInput > 2) {
+					System.out.println("Invalid Input!! Enter a valid number from the options");
+                           		continue callCostSettingsMenu;
+                        		}
 
 					switch (callCostSettingsInput) {
                                 	case 1:
@@ -697,6 +788,11 @@ Press 0 to go back
 			System.out.print(tones);
 			System.out.print("Please Enter your preferred number from the options: ");
                         int tonesInput = input.nextInt();
+
+			 if (tonesInput < 0 || tonesInput > 9) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                            continue tonesMenu;
+                        }
 
 			switch (tonesInput) {
                         case 1:
@@ -787,20 +883,30 @@ Press 0 to go back
         		System.out.print("Please Enter your preferred number from the options: ");
         		int settingsInput = input.nextInt();
 
+			 if (settingsInput < 0 || settingsInput > 4) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                            continue settingsMenu;
+                        }
+
         		switch (settingsInput) {
             		case 1:
                 	callSettingsMenu:
                 	while (true) {
                     	System.out.print(callSettings);
-                   	 System.out.println("Please Enter your preferred number from call settings options:");
+                   	System.out.println("Please Enter your preferred number from call settings options:");
                     	int callSettingsInput = input.nextInt();
+
+			if (callSettingsInput < 0 || callSettingsInput > 6) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                        continue;
+                        }
 
                     switch (callSettingsInput) {
                         case 1:
                             System.out.println("Automatic redial");
                             System.out.println("Press 0 to go back");
                             if (input.nextInt() == 0) {
-                                continue callSettingsMenu; 
+                                continue settingsMenu; 
                             }
                             break;
 
@@ -860,7 +966,13 @@ Press 0 to go back
                    	 System.out.println("Please Enter your preferred number from call settings options:");
                     	int phoneSettingsInput = input.nextInt();
 
-                    switch (phoneSettingsInput) {
+			if (phoneSettingsInput < 0 || phoneSettingsInput > 6) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                        continue phoneSettingsMenu;
+                        }
+
+
+                    	switch (phoneSettingsInput) {
                         case 1:
                             System.out.println("Language");
                             System.out.println("Press 0 to go back");
@@ -926,7 +1038,13 @@ Press 0 to go back
                    	 System.out.println("Please Enter your preferred number from call settings options:");
                     	int securitySettingsInput = input.nextInt();
 
-                    switch (securitySettingsInput) {
+			if (securitySettingsInput < 0 || securitySettingsInput > 6) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                        continue securitySettingsMenu;
+                        }
+
+
+                    	switch (securitySettingsInput) {
                         case 1:
                             System.out.println("PIN code request");
                             System.out.println("Press 0 to go back");
@@ -1036,6 +1154,11 @@ Press 0 to go back
 			System.out.print("Please Enter your preferred number from the options: ");
                         int clockInput = input.nextInt();
 
+			 if (clockInput < 0 || clockInput > 6) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                            continue clockMenu;
+                        }
+
 			switch (clockInput) {
                         case 1:
                         System.out.println("Alarm clock");
@@ -1112,3 +1235,9 @@ Press 0 to go back
         }
     }
 }
+
+// int backInput = input.nextInt();
+                       //          if (backInput == 0) {
+         //   continue phoneBookMenu;       } else {
+         //   System.out.println("Invalid input. Press 0 to go back.");
+       // }
