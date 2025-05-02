@@ -1309,7 +1309,7 @@ Press 0 to go back
                                 continue callSettingsMenu; 
 
 			case 0:
-			continue callSettingsMenu;	
+			continue settingsMenu;	
 			}
 			}
 
@@ -1411,7 +1411,7 @@ Press 0 to go back
                                 continue phoneSettingsMenu; 
 
 			case 0:
-			continue phoneSettingsMenu;
+			continue settingsMenu;
 
 			}
 			}
@@ -1511,8 +1511,9 @@ Press 0 to go back
                                 continue securitySettingsMenu; 
 			
 			case 0:
-			continue securitySettingsMenu;
+			continue settingsMenu;
 			}
+			break;
 			}
 		
 			case 4:
