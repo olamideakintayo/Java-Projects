@@ -450,16 +450,7 @@ Press 0 to go back
                                
 
 			    case 0:
-				 while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
-				    continue mainMenu;
+			    continue mainMenu;
                         }
                         break;
                     }
@@ -754,17 +745,8 @@ Press 0 to go back
                               
 		
 			   case 0:
-				 while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
-				    continue mainMenu;
-				
+			   continue mainMenu;
+		
                         }
                         break;
                     }
@@ -937,15 +919,6 @@ Press 0 to go back
                              	
 			
 				case 0:
-				while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
 				continue callRegisterMenu;
 				}
 				}
@@ -1006,18 +979,10 @@ Press 0 to go back
                                 continue showCallCostsMenu;
                                							
 				case 0:
-				while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
 				continue callRegisterMenu;
 				}				
 					}
+
 			
 				case 7: 
 				callCostSettingsMenu:
@@ -1089,19 +1054,11 @@ Press 0 to go back
 					
 
 			    case 0:
-			    while(true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
-				    continue mainMenu;
+			    continue mainMenu;
 					
 				}
 					}
+
 	
 			case 5:
 			tonesMenu:
@@ -1238,18 +1195,10 @@ Press 0 to go back
                         continue tonesMenu;
                         
 			case 0:
-			 while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
 			continue mainMenu;
 			}			
 	    		}
+
 
 			case 6:
     			settingsMenu:
@@ -1360,18 +1309,11 @@ Press 0 to go back
                                 continue callSettingsMenu; 
 
 			case 0:
-			 while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
 			continue callSettingsMenu;	
 			}
 			}
+
+
 			case 2:
                 	phoneSettingsMenu:
                 	while (true) {
@@ -1469,15 +1411,6 @@ Press 0 to go back
                                 continue phoneSettingsMenu; 
 
 			case 0:
-			 while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
 			continue phoneSettingsMenu;
 
 			}
@@ -1578,15 +1511,6 @@ Press 0 to go back
                                 continue securitySettingsMenu; 
 			
 			case 0:
-			 while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
 			continue securitySettingsMenu;
 			}
 			}
@@ -1605,15 +1529,6 @@ Press 0 to go back
                                 continue settingsMenu; 
 
 			case 0:
-			 while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
 			continue mainMenu;
 			}	
 			}
@@ -1766,15 +1681,6 @@ Press 0 to go back
    
 
 			case 0:
-			 while (true) {
-    			    System.out.println("Press 0 to go back");
-    		            int back = input.nextInt();
-    			    if (back == 0) {
-        		    break;  
-    			    } else {
-       			    System.out.println("Invalid input! Please press 0 to go back.");
-   				 }
-				}
 			continue mainMenu;
 			}
 			}
