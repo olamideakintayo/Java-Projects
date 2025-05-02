@@ -246,6 +246,7 @@ Press 0 to go back
                             continue mainMenu;
                         }
 
+
             switch (mainMenuInput) {
                 case 1:
                     phoneBookMenu:
@@ -258,116 +259,207 @@ Press 0 to go back
 			System.out.println("Invalid Input!! Enter a valid number from the options");
                             continue phoneBookMenu;
                         }
+
+
                         switch (phoneBookInput) {
                             case 1:
-                                System.out.println("Search");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
-                                    continue phoneBookMenu;
-                                }
-                                break;
+                            System.out.println("Search");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue phoneBookMenu;
+                               
+
                             case 2:
-                                System.out.println("Service Nos.");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
-                                    continue phoneBookMenu;
-                                }
-                                break;
+                            System.out.println("Service Nos.");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue phoneBookMenu;
+                               
+
                             case 3:
-                                System.out.println("Add name");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
-                                    continue phoneBookMenu;
-                                }
-                                break;
+                            System.out.println("Add name");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue phoneBookMenu;
+                               
+
                             case 4:
-                                System.out.println("Erase");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
-                                    continue phoneBookMenu;
-                                }
-                                break;
+                            System.out.println("Erase");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue phoneBookMenu;
+                               
+
                             case 5:
                                 System.out.println("Edit");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
-                                    continue phoneBookMenu;
-                                }
-                                break;
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue phoneBookMenu;
+                               
+
                             case 6:
                                 System.out.println("Assign tone");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
-                                    continue phoneBookMenu;
-                                }
-                                break;
+                                 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue phoneBookMenu;
+                               
+
                             case 7:
-                                System.out.println("Send b'card");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
-                                    continue phoneBookMenu;
-                                }
-                                break;
-                            case 8:
-                                optionsMenu:
-                                while (true) {
-                                    System.out.print(phoneBookOptions);
-                                    System.out.print("Please Enter your preferred number from the options: ");
-                                    int phoneBookOptionsInput = input.nextInt();
+                            System.out.println("Send b'card");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue phoneBookMenu;
+                                
 
-					if (phoneBookOptionsInput < 0 || phoneBookOptionsInput > 6) {
-					System.out.println("Invalid Input!! Enter a valid number from the options");
-                        		continue optionsMenu;
-                        		}
-                                    switch (phoneBookOptionsInput) {
-                                        case 1:
-                                            System.out.println("Type of view");
-                                            System.out.println("Press 0 to go back");
-                                            if (input.nextInt() == 0) {
-                                                continue optionsMenu;
-                                            }
-                                            break;
-                                        case 2:
-                                            System.out.println("Memory status");
-                                            System.out.println("Press 0 to go back");
-                                            if (input.nextInt() == 0) {
-                                                continue optionsMenu;
-                                            }
-                                            break;
+                        case 8:
+                        optionsMenu:
+                        while (true) {
+                        System.out.print(phoneBookOptions);
+                        System.out.print("Please Enter your preferred number from the options: ");
+                        int phoneBookOptionsInput = input.nextInt();
 
-					 case 0:
-				System.out.println("You're about to go back to the previous menu");
-				System.out.println("Press 0 to go back");
-				if (input.nextInt() == 0) {
+			if (phoneBookOptionsInput < 0 || phoneBookOptionsInput > 6) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                    	continue optionsMenu;
+                        }
+
+
+                            switch (phoneBookOptionsInput) {
+                            case 1:
+                            System.out.println("Type of view");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue optionsMenu;
+                                           
+
+                            case 2:
+                            System.out.println("Memory status");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue optionsMenu;
+                                           
+
+
+			    case 0:
+		            while(true)  {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
 				    continue phoneBookMenu;
 				}
 				break;
 
                                     }
                                     break;
-                                }
-                                break;
+                                
+
                             case 9:
                                 System.out.println("Speed dials");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
-                                    continue phoneBookMenu;
-                                }
-                                break;
+                                 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue phoneBookMenu;
+                                
+
                             case 10:
                                 System.out.println("Voice tags");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
-                                    continue phoneBookMenu;
-                                }
-                                break;
-			    case 0:
-				System.out.println("You're about to go back to the previous menu");
-				System.out.println("Press 0 to go back");
-				if (input.nextInt() == 0) {
-				    continue mainMenu;
+                                 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
 				}
-				break;
+                                    continue phoneBookMenu;
+                               
+
+			    case 0:
+				 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+				    continue mainMenu;
                         }
                         break;
                     }
@@ -389,91 +481,157 @@ Press 0 to go back
                         switch (messagesInput) {
                             case 1:
                                 System.out.println("Write messages");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue messagesMenu;
-                                }
-                                break;
+                               
+
                             case 2:
                                 System.out.println("Inbox");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue messagesMenu;
-                                }
-                                break;
+                               
+
                             case 3:
                                 System.out.println("Outbox");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue messagesMenu;
-                                }
-                                break;
+                               
+
                             case 4:
                                 System.out.println("Picture messages");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue messagesMenu;
-                                }
-                                break;
+                              
+
                             case 5:
                                 System.out.println("Templates");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue messagesMenu;
-                                }
-                                break;
+                               
+
                             case 6:
                                 System.out.println("Smileys");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue messagesMenu;
-                                }
-                                break;
-                            case 7:
-                                messageSettingsMenu:
-                                while (true) {
-                                    System.out.print(messageSettings);
-                                    System.out.print("Please Enter your preferred number from the options: ");
-                                    int messageSettingsInput = input.nextInt();
+                                                       
 
-				if (messageSettingsInput < 0 || messageSettingsInput > 2) {
-						 System.out.println("Invalid Input!! Enter a valid number from the options");
-                           			 continue messageSettingsMenu;
-                        			}
-                                    switch (messageSettingsInput) {
-                                        case 1:
-                                            set1Menu:
-                                            while (true) {
-                                                System.out.print(set1);
-                                                System.out.print("Please Enter your preferred number from the options: ");
-                                                int set1Input = input.nextInt();
+			case 7:
+                        messageSettingsMenu:
+                        while (true) {
+                        System.out.print(messageSettings);
+                        System.out.print("Please Enter your preferred number from the options: ");
+                        int messageSettingsInput = input.nextInt();
 
-						if (set1Input < 0 || set1Input > 3) {
-						 System.out.println("Invalid Input!! Enter a valid number from the options");
-                           			 continue set1Menu;
-                        			}
-                                                switch (set1Input) {
-                                                    case 1:
-                                                        System.out.println("Message center number");
-                                                        System.out.println("Press 0 to go back");
-                                                        if (input.nextInt() == 0) {
-                                                            continue set1Menu;
-                                                        }
-                                                        break;
-                                                    case 2:
-                                                        System.out.println("Messages sent as");
-                                                        System.out.println("Press 0 to go back");
-                                                        if (input.nextInt() == 0) {
-                                                            continue set1Menu;
-                                                        }
-                                                        break;
-                                                    case 3:
-                                                        System.out.println("Message validity");
-                                                        System.out.println("Press 0 to go back");
-                                                        if (input.nextInt() == 0) {
-                                                            continue set1Menu;
-                                                        }
-                                                        break;
+			if (messageSettingsInput < 0 || messageSettingsInput > 2) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                        continue messageSettingsMenu;
+                        }
+
+                        switch (messageSettingsInput) {
+                        case 1:
+                        set1Menu:
+                        while (true) {
+                        System.out.print(set1);
+                        System.out.print("Please Enter your preferred number from the options: ");
+                        int set1Input = input.nextInt();
+
+			if (set1Input < 0 || set1Input > 3) {
+			System.out.println("Invalid Input!! Enter a valid number from the options");
+                        continue set1Menu;
+                        }
+
+
+                            switch (set1Input) {
+                            case 1:
+                            System.out.println("Message center number");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue set1Menu;
+                                                        
+
+
+                            case 2:
+                            System.out.println("Messages sent as");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue set1Menu;
+                                                                                    
+			
+			    case 3:
+                            System.out.println("Message validity");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue set1Menu;
+                                                       
                                                     case 0:
                                                         continue messageSettingsMenu;
                                                         
@@ -481,39 +639,63 @@ Press 0 to go back
                                                 break;
                                             }
                                             break;
-                                        case 2:
-                                            commonMenu:
-                                            while (true) {
-                                                System.out.print(common);
-                                                System.out.print("Please Enter your preferred number from the options: ");
-                                                int commonInput = input.nextInt();
 
-						if (commonInput < 0 || commonInput > 3) {
-						 System.out.println("Invalid Input!! Enter a valid number from the options");
-                           			 continue commonMenu;
-                        			}
-                                                switch (commonInput) {
-                                                    case 1:
-                                                        System.out.println("Delivery reports");
-                                                        System.out.println("Press 0 to go back");
-                                                        if (input.nextInt() == 0) {
-                                                            continue commonMenu;
-                                                        }
-                                                        break;
-                                                    case 2:
-                                                        System.out.println("Reply via same centre");
-                                                        System.out.println("Press 0 to go back");
-                                                        if (input.nextInt() == 0) {
-                                                            continue commonMenu;
-                                                        }
-                                                        break;
-                                                    case 3:
-                                                        System.out.println("Character support");
-                                                        System.out.println("Press 0 to go back");
-                                                        if (input.nextInt() == 0) {
-                                                            continue commonMenu;
-                                                        }
-                                                        break;
+
+                             case 2:
+                             commonMenu:
+                             while (true) {
+                             System.out.print(common);
+                             System.out.print("Please Enter your preferred number from the options: ");
+                             int commonInput = input.nextInt();
+
+			    if (commonInput < 0 || commonInput > 3) {
+			    System.out.println("Invalid Input!! Enter a valid number from the options");
+                            continue commonMenu;
+                        	}
+
+
+                            switch (commonInput) {
+                            case 1:
+                            System.out.println("Delivery reports");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue commonMenu;
+                                                        
+
+                            case 2:
+                            System.out.println("Reply via same centre");
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue commonMenu;
+                                                       
+
+                             case 3:
+                             System.out.println("Character support");
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue commonMenu;
+                                                        
                                                     case 0:
                                                         continue messageSettingsMenu;
                                                         
@@ -527,36 +709,62 @@ Press 0 to go back
                                     break;
                                 }
                                 break;
+
+
                             case 8:
                                 System.out.println("Info service");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue messagesMenu;
-                                }
-                                break;
+                               
+
                             case 9:
                                 System.out.println("Voice mailbox number");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue messagesMenu;
-                                }
-                                break;
+                               
+
                             case 10:
                                 System.out.println("Service command editor");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue messagesMenu;
-                                }
-                                break;
+                              
 		
 			   case 0:
-				System.out.println("You're about to go back to the previous menu");
-				System.out.println("Press 0 to go back");
-				if (input.nextInt() == 0) {
-				    continue mainMenu;
+				 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
 				}
-				break;
-
+				    continue mainMenu;
+				
                         }
                         break;
                     }
@@ -564,10 +772,17 @@ Press 0 to go back
 
                 case 3:
                     System.out.println("Chat");
-                    System.out.println("Press 0 to go back");
-                    if (input.nextInt() == 0) {
+                     while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue mainMenu;
-                   }
+                
  		case 4:
 		 callRegisterMenu:
                     while (true) {
@@ -583,35 +798,59 @@ Press 0 to go back
 			switch (callRegisterInput) {
                             case 1:
                                 System.out.println("Missed calls");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue callRegisterMenu;
-                                }
-                                break; 
+                                
 
 			    case 2:
                                 System.out.println("Received calls");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                               while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue callRegisterMenu;
-                                }
-                                break; 
+                               
 			    
 			    case 3:
                                 System.out.println("Dialled numbers");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue callRegisterMenu;
-                                }
-                                break; 
+                                
 
 			    case 4:
                                 System.out.println("Erase recent call lists");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue callRegisterMenu;
-                                }
-                                break; 
+                              
 	
 			   case 5:
                                 showCallDurationMenu:
@@ -625,162 +864,244 @@ Press 0 to go back
                            	continue showCallDurationMenu;
                         	}
 
+
 				switch (showCallDurationInput) {
                                 case 1:
                                 System.out.println("Last call Duration");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue showCallDurationMenu;
-                                }
-                                break; 
+                              
 
 				case 2:
                                 System.out.println("All calls' duration");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue showCallDurationMenu;
-                                }
-                                break; 
+                              
 				
    				case 3:
                                 System.out.println("Received calls' duration");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue showCallDurationMenu;
-                                }
-                                break; 
+                               
 
 				case 4:
                                 System.out.println("Dialled calls' duration");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue showCallDurationMenu;
-                                }
-                                break; 
-				
+                               
+
 				case 5:
                                 System.out.println("Clear timers");
-                                System.out.println("Press 0 to go back");
-                                if (input.nextInt() == 0) {
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                     continue showCallDurationMenu;
-                                }
-                                break; 
-				
+                             	
+			
 				case 0:
-					System.out.println("You're about to go back to the previous menu");
-					System.out.println("Press 0 to go back");
-					if (input.nextInt() == 0) {
-				    	continue callRegisterMenu;
-					}
-					break;
-					
+				while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+				continue callRegisterMenu;
+				}
+				}
 
-				}
-				}
+
 				case 6:
-					showCallCostsMenu:
-					while(true) {
-					System.out.print(showCallCosts);
-					System.out.print("Please Enter your preferred number from the options: ");
-                        		int showCallCostsInput = input.nextInt();
+				showCallCostsMenu:
+				while(true) {
+				System.out.print(showCallCosts);
+				System.out.print("Please Enter your preferred number from the options: ");
+                       		int showCallCostsInput = input.nextInt();
 
-					if (showCallCostsInput < 0 || showCallCostsInput > 3) {
-					System.out.println("Invalid Input!! Enter a valid number from the options");
-                           		continue showCallCostsMenu;
-                        		}
+				if (showCallCostsInput < 0 || showCallCostsInput > 3) {
+				System.out.println("Invalid Input!! Enter a valid number from the options");
+                          	continue showCallCostsMenu;
+                        	}
 
-					switch (showCallCostsInput) {
-                                	case 1:
-                                	System.out.println("Last call cost");
-                                	System.out.println("Press 0 to go back");
-                                	if (input.nextInt() == 0) {
-                                    	continue showCallCostsMenu;
-                               		}
-                               		break; 
-					
-					case 2:
-                                	System.out.println("All call cost");
-                                	System.out.println("Press 0 to go back");
-                                	if (input.nextInt() == 0) {
-                                    	continue showCallCostsMenu;
-                               		}
-                               		break; 
+				switch (showCallCostsInput) {
+                                case 1:
+                                System.out.println("Last call cost");
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue showCallCostsMenu;
+                               		
 
-					case 3:
-                                	System.out.println("Clear counters");
-                                	System.out.println("Press 0 to go back");
-                                	if (input.nextInt() == 0) {
-                                    	continue showCallCostsMenu;
-                               		}
-                               		break; 
-					
-					case 0:
-					System.out.println("You're about to go back to the previous menu");
-					System.out.println("Press 0 to go back");
-					if (input.nextInt() == 0) {
-				    	continue callRegisterMenu;
-					}
-					break;
-					}
+				case 2:
+                                System.out.println("All call cost");
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue showCallCostsMenu;
+                               		 
+
+				case 3:
+                                System.out.println("Clear counters");
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue showCallCostsMenu;
+                               							
+				case 0:
+				while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+				continue callRegisterMenu;
+				}				
 					}
 			
-					case 7: 
-					callCostSettingsMenu:
-					while(true) {
-					System.out.print(callCostSettings);
-					System.out.print("Please Enter your preferred number from the options: ");
-                        		int callCostSettingsInput = input.nextInt();
+				case 7: 
+				callCostSettingsMenu:
+				while(true) {
+				System.out.print(callCostSettings);
+				System.out.print("Please Enter your preferred number from the options: ");
+                        	int callCostSettingsInput = input.nextInt();
 
-					if (callCostSettingsInput < 0 || callCostSettingsInput > 2) {
-					System.out.println("Invalid Input!! Enter a valid number from the options");
-                           		continue callCostSettingsMenu;
-                        		}
+				if (callCostSettingsInput < 0 || callCostSettingsInput > 2) {
+				System.out.println("Invalid Input!! Enter a valid number from the options");
+                          	continue callCostSettingsMenu;
+                        	}
 
-					switch (callCostSettingsInput) {
-                                	case 1:
-                                	System.out.println("Call cost limit");
-                                	System.out.println("Press 0 to go back");
-                                	if (input.nextInt() == 0) {
-                                    	continue callCostSettingsMenu;
-                               		}
-                               		break; 
-	
-					case 2:
-                                	System.out.println("Show costs in");
-                                	System.out.println("Press 0 to go back");
-                                	if (input.nextInt() == 0) {
-                                    	continue callCostSettingsMenu;
-                               		}
-                               		break;
-
-					case 0:
-					System.out.println("You're about to go back to the previous menu");
-					System.out.println("Press 0 to go back");
-					if (input.nextInt() == 0) {
-				    	continue callRegisterMenu;
-					}
-					break;
-					}
-					break;
-					}
-					
-				case 8:
-				System.out.println("Prepaid credit");
-				System.out.println("Press 0 to go back");
-					if (input.nextInt() == 0) {
-				    	continue callRegisterMenu;
-					}
-					break;
-
-				case 0:
-					System.out.println("You're about to go back to the previous menu");
-					System.out.println("Press 0 to go back");
-					if (input.nextInt() == 0) {
-				    	continue mainMenu;
-					}
+				switch (callCostSettingsInput) {
+                                case 1:
+                                System.out.println("Call cost limit");
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
 				}
-			break;
-			}
+                                continue callCostSettingsMenu;
+                               		
+	
+				case 2:
+                                System.out.println("Show costs in");
+                                while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue callCostSettingsMenu;
+                               	
+
+			    case 0:
+			    while(true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+				continue callRegisterMenu;
+				}
+				}
+					
+			    case 8:
+			    System.out.println("Prepaid credit");
+			    while(true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+				    continue callRegisterMenu;
+					
+
+			    case 0:
+			    while(true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+				    continue mainMenu;
+					
+				}
+					}
 	
 			case 5:
 			tonesMenu:
@@ -797,83 +1118,137 @@ Press 0 to go back
 			switch (tonesInput) {
                         case 1:
                         System.out.println("Ringing tone");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                        while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue tonesMenu;
-                        }
-                        break; 
-			
+                   
 			case 2:
                         System.out.println("Ringing volume");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                        while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue tonesMenu;
-                        }
-                        break;
-
+                     
 			case 3:
                         System.out.println("Incoming call alert");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                         while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue tonesMenu;
-                        }
-                        break;
+                       
 
 			case 4:
                         System.out.println("Composer");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                        while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue tonesMenu;
-                        }
-                        break;
+                      
 
 			case 5:
                         System.out.println("Message alert tone");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                         while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue tonesMenu;
-                        }
-                        break;
+          
 
 			case 6:
                         System.out.println("Keypad tones");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                        while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue tonesMenu;
-                        }
-                        break;
 			
 			case 7:
                         System.out.println("Warning and game tones");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                       while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue tonesMenu;
-                        }
-                        break;
 
 			case 8:
                         System.out.println("Vibrating alert");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                         while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue tonesMenu;
-                        }
-                        break;
+                    
 
 			case 9:
                         System.out.println("Screen saver");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                        while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue tonesMenu;
-                        }
-                        break;
-
+                        
 			case 0:
-			System.out.println("You're about to go back to the previous menu");
-			System.out.println("Press 0 to go back");
-			if (input.nextInt() == 0) {
+			 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
 			continue mainMenu;
 			}			
-			}
 	    		}
 
 			case 6:
@@ -904,67 +1279,107 @@ Press 0 to go back
                     switch (callSettingsInput) {
                         case 1:
                             System.out.println("Automatic redial");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
-                                continue settingsMenu; 
-                            }
-                            break;
+			    while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+			    continue callSettingsMenu;
+
 
 			case 2:
 			    System.out.println("Speed dialling");
-			    System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+			     while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue callSettingsMenu; 
-                            }
-                            break;
+                    
 
 			case 3:
 			    System.out.println("Call waiting options");
-			    System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+			     while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue callSettingsMenu; 
-                            }
-                            break;
 
 			case 4:
 			    System.out.println("Own number sending");
-			    System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+			    while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue callSettingsMenu; 
-                            }
-                            break;
+            
 
 			case 5:
 			    System.out.println("Phone line in use");
-			    System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+			     while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue callSettingsMenu; 
-                            }
-                            break;
+                        
 
 			case 6:
 			    System.out.println("Automatic answer");
-			    System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+			     while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue callSettingsMenu; 
-                            }
-                            break;
 
 			case 0:
-			System.out.println("You're about to go back to the previous menu");
-			System.out.println("Press 0 to go back");
-			if (input.nextInt() == 0) {
-			continue callSettingsMenu;
-			}	
-
+			 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+			continue callSettingsMenu;	
 			}
 			}
 			case 2:
                 	phoneSettingsMenu:
                 	while (true) {
+			
                     	System.out.print(phoneSettings);
-                   	 System.out.println("Please Enter your preferred number from call settings options:");
+                   	System.out.println("Please Enter your preferred number from call settings options:");
                     	int phoneSettingsInput = input.nextInt();
+			
 
 			if (phoneSettingsInput < 0 || phoneSettingsInput > 6) {
 			System.out.println("Invalid Input!! Enter a valid number from the options");
@@ -975,58 +1390,95 @@ Press 0 to go back
                     	switch (phoneSettingsInput) {
                         case 1:
                             System.out.println("Language");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue phoneSettingsMenu; 
-                            }
-                            break;
 
 			case 2:
                             System.out.println("Cell info display");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue phoneSettingsMenu; 
-                            }
-                            break;
+                           
 
 			case 3:
                             System.out.println("Welcome note");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue phoneSettingsMenu; 
-                            }
-                            break;
+          
 	
 			case 4:
                             System.out.println("Network selection");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue phoneSettingsMenu; 
-                            }
-                            break;
 
 			case 5:
                             System.out.println("Lights");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue phoneSettingsMenu; 
-                            }
-                            break;
 
 			case 6:
                             System.out.println("Confirm SIM service actions");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue phoneSettingsMenu; 
-                            }
-                            break;
 
 			case 0:
-			System.out.println("You're about to go back to the previous menu");
-			System.out.println("Press 0 to go back");
-			if (input.nextInt() == 0) {
+			 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
 			continue phoneSettingsMenu;
-			}	
 
 			}
 			}
@@ -1047,105 +1499,176 @@ Press 0 to go back
                     	switch (securitySettingsInput) {
                         case 1:
                             System.out.println("PIN code request");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue securitySettingsMenu; 
-                            }
-                            break;
-
+                          
 			case 2:
                             System.out.println("Call barring service");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue securitySettingsMenu; 
-                            }
-                            break;
-
+                          
 			case 3:
                             System.out.println("Fixed dialling");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue securitySettingsMenu; 
-                            }
-                            break;
+                         
 
 			case 4:
                             System.out.println("Closed user group");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue securitySettingsMenu; 
-                            }
-                            break;
 
 			case 5:
                             System.out.println("Phone security");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue securitySettingsMenu; 
-                            }
-                            break;
+              
 
 			case 6:
                             System.out.println("Change access codes");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue securitySettingsMenu; 
-                            }
-                            break;
 			
 			case 0:
-			System.out.println("You're about to go back to the previous menu");
-			System.out.println("Press 0 to go back");
-			if (input.nextInt() == 0) {
+			 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
 			continue securitySettingsMenu;
-			}
-
 			}
 			}
 		
 			case 4:
                             System.out.println("Restore factory settings");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue settingsMenu; 
-                            }
-			case 0:
-			System.out.println("You're about to go back to the previous menu");
-			System.out.println("Press 0 to go back");
-			if (input.nextInt() == 0) {
-			continue mainMenu;
-			}
 
+			case 0:
+			 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+			continue mainMenu;
 			}	
 			}
 	
 			case 7:
                             System.out.println("Call divert");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
-                                continue mainMenu; 
-                            }	
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue mainMenu; 	
 
 			case 8:
                             System.out.println("Games");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue mainMenu; 
-                            }	
 
 			case 9:
                             System.out.println("Calculator");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
-                                continue mainMenu; 
-                            }	
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue mainMenu; 	
 
 			case 10:
                             System.out.println("Reminders");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
-                                continue mainMenu; 
-                            }	
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue mainMenu; 	
 
 			case 11:
 			clockMenu:
@@ -1162,82 +1685,127 @@ Press 0 to go back
 			switch (clockInput) {
                         case 1:
                         System.out.println("Alarm clock");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                         while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue clockMenu;
-                        }
-                        break; 
+                    
 		
 			case 2:
                         System.out.println("Clock settings");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                         while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue clockMenu;
-                        }
-                        break; 
 
 			case 3:
                         System.out.println("Date setting");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                         while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue clockMenu;
-                        }
-                        break; 
 
 			case 4:
                         System.out.println("Stopwatch");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                        while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue clockMenu;
-                        }
-                        break; 
+                    
 
 			case 5:
                         System.out.println("Countdown timer");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                         while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue clockMenu;
-                        }
-                        break; 
+                 
 
 			case 6:
                         System.out.println("Auto update of date and time");
-                        System.out.println("Press 0 to go back");
-                        if (input.nextInt() == 0) {
+                       while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                         continue clockMenu;
-                        }
-                        break;
+   
 
 			case 0:
-			System.out.println("You're about to go back to the previous menu");
-			System.out.println("Press 0 to go back");
-			if (input.nextInt() == 0) {
+			 while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
 			continue mainMenu;
-			}
 			}
 			}
 
 			case 12:
                             System.out.println("Profiles");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
-                                continue mainMenu; 
-                            }	
+                             while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
+                                continue mainMenu; 	
 
 			case 13:
                             System.out.println("SIM services");
-                            System.out.println("Press 0 to go back");
-                            if (input.nextInt() == 0) {
+                            while (true) {
+    			    System.out.println("Press 0 to go back");
+    		            int back = input.nextInt();
+    			    if (back == 0) {
+        		    break;  
+    			    } else {
+       			    System.out.println("Invalid input! Please press 0 to go back.");
+   				 }
+				}
                                 continue mainMenu; 
-                            }	
 			}		
 			break;
         }
     }
 }
-
-// int backInput = input.nextInt();
-                       //          if (backInput == 0) {
-         //   continue phoneBookMenu;       } else {
-         //   System.out.println("Invalid input. Press 0 to go back.");
-       // }
