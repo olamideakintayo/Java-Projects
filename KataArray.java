@@ -88,20 +88,28 @@ public class KataArray {
 	return evenTotal;
 	}
 
-	public static void evenNumbersIn(int[] numbers) {
+	public static int[] evenNumbersIn(int[] numbers) {
+	int even = 0;
+	int[] evenNumbers = new int[noOfEvenNumbersIn(numbers)];
 	for(int counter = 0; counter < numbers.length; counter++) {
 		if(numbers[counter] % 2 == 0) {
-		System.out.print(numbers[counter] + " ");
+		evenNumbers[even] = numbers[counter];
+		even++;
 		}
 	}
+	return evenNumbers;
 	}
 
-	public static void oddNumbersIn(int[] numbers) {
+	public static int[] oddNumbersIn(int[] numbers) {
+	int odd = 0;
+	int[] oddNumbers = new int[noOfOddNumbersIn(numbers)];
 	for(int counter = 0; counter < numbers.length; counter++) {
 		if(numbers[counter] % 2 != 0) {
-		System.out.print(numbers[counter] + " ");
+		oddNumbers[odd] = numbers[counter];
+		odd++;
 		}
 	}
+	return oddNumbers;
 	}
 
 	public static void squareNumbersIn(int[] numbers) {
