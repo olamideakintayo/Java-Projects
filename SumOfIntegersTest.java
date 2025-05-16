@@ -8,8 +8,8 @@ public class SumOfIntegersTest {
 	@Test
 	public void displaySumOfIntegers() {
 	SumOfIntegers digits = new SumOfIntegers();
-	int number = 9678;
-	int expected = 30;
+	int number = 10000;
+	int expected = 1;
 	int actual = digits.additionOfIntegers(number);
 	assertEquals(expected, actual);
 	}
