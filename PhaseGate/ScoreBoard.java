@@ -13,6 +13,12 @@ public class ScoreBoard {
     }
 
 
+
+public static int[] averageScores(int[][] scores) {
+ int average = 0;
+ int[] totals = new int[totalScores(scores)];
+ for(int counter = 0; counter < scores.length; counter++) {
+      average[counter] = totals[average] /
    
 
 
