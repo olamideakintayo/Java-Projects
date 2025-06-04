@@ -88,26 +88,26 @@ class Employee {
     }
 
     double federalTax;
-    while (true) {
-        System.out.print("Enter federal tax withholding rate (0 - 1): ");
-        federalTax = input.nextDouble();
-        if (federalTax >= 0 && federalTax <= 1) {
-            break;
-        } else {
-            System.out.println("Error: Federal tax rate must be between 0 and 1.");
-        }
+while (true) {
+    System.out.print("Enter federal tax withholding rate (0 - 100): ");
+    federalTax = input.nextDouble();
+    if (federalTax >= 0 && federalTax <= 100) {
+        break;
+    } else {
+        System.out.println("Error: Federal tax rate must be between 0 and 100.");
     }
+}
 
-    double stateTax;
-    while (true) {
-        System.out.print("Enter state tax withholding rate (0 - 1): ");
-        stateTax = input.nextDouble();
-        if (stateTax >= 0 && stateTax <= 1) {
-            break;
-        } else {
-            System.out.println("Error: State tax rate must be between 0 and 1.");
-        }
+double stateTax;
+while (true) {
+    System.out.print("Enter state tax withholding rate (0 - 100): ");
+    stateTax = input.nextDouble();
+    if (stateTax >= 0 && stateTax <= 100) {
+        break;
+    } else {
+        System.out.println("Error: State tax rate must be between 0 and 100.");
     }
+}
 
     employees.add(new Employee(name, hoursWorked, hourlyPay, federalTax, stateTax));
     System.out.println("Employee added successfully.");
